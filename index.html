@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <button
+      class="button"
+      id="button"
+      aria-haspopup="dialog"
+      aria-controls="modal"
+    >
+      Open Modal
+    </button>
+
+    <div class="modal-backdrop" id="modal-backdrop" hidden></div>
+    <div
+      class="modal"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-desc"
+      tabindex="-1"
+      hidden
+    >
+      <div class="modal-container">
+        <header class="modal-header">
+          <h2 id="modal-title">Modal Header</h2>
+          <button class="closeBtn" id="closeBtn" aria-label="Close modal">
+            &times;
+          </button>
+        </header>
+        <div class="modal-body" id="modal-desc">
+          <p>Modal popup...</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            tenetur libero possimus saepe dicta quo aliquid pariatur. Tempora
+            quia, possimus, nostrum illo eos quod recusandae quam asperiores,
+            maxime voluptates doloribus?
+          </p>
+        </div>
+        <footer class="modal-footer">Modal footer</footer>
+      </div>
+    </div>
+  </body>
+</html>
